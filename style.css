@@ -28,7 +28,7 @@ i{
     margin: 20px;
     margin-right: 5px;
     width: 50%;
-    height: 850px;
+    height: 900px;
     background-image: url(imgs/IMG-1.jpg);
     background-size: cover;
     display: flex;
@@ -48,7 +48,7 @@ i{
 .video-container {
     position: relative;
     width: 50%;
-    height: 850px;
+    height: 900px;
     overflow: hidden;
     margin: 20px;
     margin-right: 5px;
