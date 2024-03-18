@@ -3,32 +3,43 @@ body{
     padding: 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.logo{
+    margin-top: 5px;
+    height: 20px;
+    margin-left: 20px;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(170, 170, 170);
     height: 50px;
+    margin-top: 25px;
+    background-color: #fff;
+    position: fixed;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 1;
 }
-ul li a{
-    text-decoration: none;
+nav ul{
+    display: flex;
 }
-ul li{
+nav ul li{
     list-style: none;
     margin-right: 10px;
 }
-ul{
-    display: flex;
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    margin-left: 15px;
 }
-nav u{
-    margin-right: 5px;
-}
-.cuadritos-1, .cuadritos-2, .cuadritos-4, .cu{
+.cuadritos-1, .cuadritos-2, .cuadritos-4{
     display: flex;
 }
 .img-1{
-    margin-top: 10px;
-    margin-left: 15px;
+    margin-top: 70px;
+    margin-left: 20px;
     width: 50%;
     height: 800px;
     background-image: url(imgs/IMG-1.jpg);
@@ -40,7 +51,7 @@ nav u{
 }
 .img-2{
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 20px;
     width: 51.5%;
     height: 800px;
     background-image: url(imgs/IMG-2.jpg);
@@ -52,7 +63,7 @@ nav u{
 }
 .img-3{
     margin: 10px;
-    margin-right: 25px;
+    margin-right: 15px;
     margin-bottom: 10px;
     width: 50%;
     height: 800px;
@@ -65,7 +76,7 @@ nav u{
 }
 .img-4{
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 20px;
     margin-bottom: 10px;
     width: 50%;
     height: 800px;
@@ -110,19 +121,25 @@ color:black
     width: 50%;
     height: 800px;
     overflow: hidden;
+    margin-top: 70px;
+    margin-right: 5px;
+}
+.video-container-3{
+    position: relative;
+    width: 50%;
+    height: 800px;
+    overflow: hidden;
     margin-top: 10px;
-    margin-right: 15px;
-
+    margin-right: 5px;
 }
 .video-container-2{
     position: relative;
-    width: 97.5%;
+    width: 97.3%;
     height: 600px;
     overflow: hidden;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-left: 20px;
 }
-#video-bg {
+#video-bg{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -148,8 +165,8 @@ color:black
     color: #fff;
     z-index: 1;
 }
-
 .overlay-link {
+    padding: 10px;
     position: absolute;
     top: 25px;
     right: 25px; 
@@ -158,7 +175,30 @@ color:black
     text-decoration: none;
     align-items: center;
     cursor: pointer;
+    overflow: hidden;
+    border-bottom: 1px solid white;
 }
+.overlay-link::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: none;
+    background-color: #000;
+    transition: top 0.3s ease;
+    text-decoration: none;
+    z-index: -1;
+    border: none;
+    opacity: 100%;
+} 
+.overlay-link:hover::before {
+    top: 0;
+} 
+.overlay-link:hover::after {
+    content: none; 
+} 
 .overlay-link-1 {
     position: absolute;
     top: 25px;
@@ -168,6 +208,7 @@ color:black
     text-decoration: none;
     align-items: center;
     cursor: pointer;
+    border: none;
 }
 .overlay-link:hover {
     text-decoration: underline;
@@ -183,29 +224,70 @@ footer ul{
 }
 footer h3{
     margin-left: 40px;
+    font-size: 15px;
+}
+.boletin{
+    margin-left: 20px;
 }
 input{
-    margin-left: 30px;
+    width: 290px;
+    margin-left: 20px;
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: 1 px solid black;
     outline: none;
 }
+.cajita{
+    width: 400px;
+}
 .redes{
     margin-top: 30px;
     margin-left: 20px;
 }
 i{
-    padding: 5px;
+    padding: 10px;
 }
 footer button{
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
+.links{
+    margin-left: 30px;
+}
+footer ul li{
+    list-style: none;
+}
 footer a{
     color: black;
+    text-decoration: none;
+    font-size: 13px;
 }
-
+.politicas{
+    margin-left: 20px;
+}
+.politicas p{
+    font-size: 12px;
+}
+.final{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(195, 195, 195);
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.final p{
+    margin-left: 10px;
+    font-size: 12px;
+}
+.final a{
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+.final img{
+    height: 12px;
+}
 
